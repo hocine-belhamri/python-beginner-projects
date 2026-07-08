@@ -6,9 +6,8 @@ chars = s.punctuation + s.digits + s.ascii_letters + " "
 chars = list(chars)
 keys= chars.copy()
 r.shuffle(keys)
-repeat = ""
-while repeat == "":
-    option = int(input("enter '1' to encrypt or '2' to decrypt or '3' to quits: "))
+while True:
+    option = int(input("enter '1' to encrypt or '2' to decrypt or '3' to quit: "))
 
     #Encrypt
 
@@ -21,7 +20,7 @@ while repeat == "":
         print()
         print(f"the encrypted: {encrypted}")
         print(f"the original: {original_text}")
-        repeat = ""
+
     #Decrypt
 
     elif option == 2:
