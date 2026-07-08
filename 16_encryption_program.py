@@ -6,9 +6,9 @@ chars = s.punctuation + s.digits + s.ascii_letters + " "
 chars = list(chars)
 keys= chars.copy()
 r.shuffle(keys)
-
-option = int(input("enter '1' to encrypt or '2' to decrypt: "))
+repeat = ""
 while repeat == "":
+    option = int(input("enter '1' to encrypt or '2' to decrypt or '3' to quits: "))
 
     #Encrypt
 
